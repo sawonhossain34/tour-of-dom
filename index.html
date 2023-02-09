@@ -13,6 +13,9 @@
         .important-places{
             color:aqua;
         }
+        .fruits-container li{
+            color : rosybrown;
+        }
     </style>
 </head>
 <body>
@@ -29,7 +32,7 @@
                 <li>bonobas</li>
             </ul>
         </section>
-        <section>
+        <section class="fruits-container">
             <h1 id='fruits-title'>Fruits i like</h1>
             <ul>
                 <li>apple</li>
@@ -49,9 +52,8 @@
         </section>
         
     </main>
-    <script src="js/dom.js">
-        
-    </script>
+    <script src="js/dom.js"></script>
+    <script src="js/styleInJs.js"></script>
     <script>
        const liCollection = document.getElementsByTagName('li');
     //    console.log(liCollection);
@@ -66,6 +68,7 @@
     for(const place of places){
         console.log(place.innerText);
     }
+    
     </script>
 </body>
 </html>
